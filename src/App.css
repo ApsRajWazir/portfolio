@@ -1,0 +1,25 @@
+.boxes{
+    height: 20vh;
+    width: 100vw;
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+#navbar {
+    background-color: rgb(219, 106, 106);
+    
+}
+#home {
+    background-color: rgb(69, 194, 69);
+}
+#about {
+    background-color: rgb(71, 71, 195);
+}
+#skills {
+    background-color: rgb(120, 67, 67);
+}
+#footer {
+    background-color: rgb(153, 171, 47);
+}
