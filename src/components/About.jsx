@@ -1,9 +1,9 @@
 
 const About = () => {
   return (
-    <div id="about" className="boxes">
+    <main id="about">
       About
-    </div>
+    </main>
   )
 }
 

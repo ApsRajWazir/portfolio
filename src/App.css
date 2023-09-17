@@ -1,25 +1,108 @@
-.boxes{
-    height: 20vh;
+/* NavBar Starts */
+#navbar {
+    height: 11vh;
     width: 100vw;
-    text-align: center;
-    font-size: 3em;
-    font-weight: bold;
-    color: whitesmoke;
+    /* border: 2px solid red; */
 }
 
-#navbar {
-    background-color: rgb(219, 106, 106);
-    
+#navbar ul {
+    background-color: var(--color2);
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border: 2px solid blue; */
+    font-size: 2.6em;
+    font-weight: bold;
 }
+
+#navbar ul li a {
+    color: var(--fontColor);
+}
+
+#navbar ul li a:hover {
+    color: rgb(244, 72, 146);
+}
+
+/* NavBar Ends */
+
+/* Home Page Starts */
 #home {
-    background-color: rgb(69, 194, 69);
+    /* border: 2px solid red; */
+    height: 78vh;
+    width: 100vw;
+    display: flex;
+    background-color: var(--color1);
+
 }
-#about {
-    background-color: rgb(71, 71, 195);
+
+.homeContentBoxes {
+    height: auto;
+    width: 49vw;
+    /* border: 2px solid blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-#skills {
-    background-color: rgb(120, 67, 67);
+
+#homeImageBox {
+    border: 5px solid rgb(244, 72, 146);
+    height: 35vw;
+    width: 35vw;
+    border-radius: 100%;
 }
+
+#homeTextBox {
+    font-size: 3em;
+    flex-direction: column;
+}
+
+#homeTextBox span{
+    margin-bottom: 2px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: var(--fontColor);
+    cursor: default;
+}
+
+#homeTextBox #LinkContainer {
+    margin-top: 20px;
+    /* border: 2px solid red; */
+    display: flex;
+}
+
+#homeTextBox #LinkContainer #rightLink {
+    margin-left: 20px;
+}
+
+/* Home Page Ends */
+
+
+/* Footer Starts */
 #footer {
-    background-color: rgb(153, 171, 47);
+    background-color: var(--color2);
+    position: absolute;
+    bottom: 0;
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 3px solid red; */
+    font-weight: bold;
+    font-size: 2.35em;
+    cursor: none;
 }
+
+#footer span {
+    color: var(--fontColor);
+}
+
+/* Footer Ends */
+
+/* Responsiveness Starts */
+@media only screen and (max-width:731px) {}
+
+/* Responsiveness Ends */

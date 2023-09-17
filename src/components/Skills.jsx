@@ -1,9 +1,9 @@
 
 const Skills = () => {
   return (
-    <div id="skills" className="boxes">
+    <main id="skills">
       Skills
-    </div>
+    </main>
   )
 }
 
