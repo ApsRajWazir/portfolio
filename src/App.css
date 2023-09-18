@@ -24,8 +24,8 @@
 #navbar ul li a:hover {
     color: rgb(244, 72, 146);
 }
-
 /* NavBar Ends */
+
 
 /* Home Page Starts */
 #home {
@@ -82,14 +82,47 @@
 }
 /* Home Page Ends */
 
+
 /* About Page Starts */
 #about {
     /* border: 2px solid red; */
     height: 78vh;
     width: 100vw;
     background-color: var(--color1);
-
+    cursor: default;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+
+#about article, #about span {
+    color: var(--fontColor);
+    /* border: 3px solid blue; */
+    font-weight: bolder;
+}
+
+#about article {
+    font-size: 2em;
+}
+
+#about article:nth-child(2) {
+    margin-top: 3%;
+}
+
+#about div {
+    /* border: 2px solid red; */
+    margin: 3% 0 0 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#about span {
+    /* border: 2px solid blueviolet; */
+    color: rgb(244, 72, 146);
+    margin: 10px 0 0 0;
+}
+
 /* About Page Ends */
 
 
@@ -128,8 +161,6 @@
 /* Skills Page Ends */
 
 
-
-
 /* Footer Starts */
 #footer {
     background-color: var(--color2);
@@ -154,7 +185,7 @@
 
 
 /* Responsiveness Starts */
-@media only screen and (max-width:731px) {
+@media (width <= 731px) {
 
     /* Home Page Starts */
     #home {
@@ -174,7 +205,16 @@
     }
     /* Home Page Ends */
 
+    /* About Page Starts */
+    #about article {
+        font-size: 1.45em;
+    }
 
+
+
+    /* About Page Ends */
+
+    /* Skills Page Starts */
     #skillContentBox {
         height: 70vh;
     }
@@ -183,6 +223,6 @@
         height: 10vh;
         width: 10vh;
     }
+    /* Skills Page Ends */
 }
-
 /* Responsiveness Ends */
